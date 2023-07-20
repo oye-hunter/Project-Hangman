@@ -95,7 +95,7 @@ function checkKeyPress(event) {
 
     event.preventDefault(); //event.preventDefault() is a method that prevents the default behavior of an event from occurring.
     
-    guess = document.getElementById("guess").value; //this will give the guessed character by user to guess variable
+    guess = document.getElementById("guess").value.toLowerCase(); //this will give the guessed character by user to guess variable
 
     let correctGuess = false; //its false because no guess has been correct (till yet)
 
